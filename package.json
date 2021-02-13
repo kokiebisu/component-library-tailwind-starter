@@ -1,9 +1,9 @@
 {
-  "name": "starter",
+  "name": "component-library-tailwind-starter",
   "version": "1.0.0",
   "main": "dist/index",
   "src": "lib/index",
-  "repository": "https://github.com/kokiebisu/design-system-tailwind-starter.git",
+  "repository": "https://github.com/kokiebisu/component-library-tailwind-starter.git",
   "author": "Kenichi Okiebisu <a01056715@gmail.com>",
   "license": "MIT",
   "dependencies": {
