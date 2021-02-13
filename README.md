@@ -40,9 +40,7 @@
 
 
 <!-- ABOUT THE PROJECT -->
-## About The Project
-
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+## Motive
 
 I wasn't able to find a good repository with the following to consideration:
 * Minimum configuration (for flexibility)
