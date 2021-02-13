@@ -12,10 +12,26 @@ module.exports = {
   module: {
     rules: [
       {
-        test: /\.tsx$/,
-        use: "ts-loader",
+        test: /\.tsx?/,
         exclude: /node_modules/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: [["@babel/preset-react"], "@babel/preset-env"],
+            // preset-react
+            // Enables the use of JSX
+
+            // preset-env
+            // Enables the use of ES2015 ~
+            plugins: ["@babel/plugin-transform-runtime"], // enable async await syntax
+          },
+        },
       },
+      // {
+      //   test: /\.tsx$/,
+      //   use: "ts-loader",
+      //   exclude: [/\.stories.tsx/, /node_modules/],
+      // },
       {
         test: /\.css$/,
         use: ["style-loader", "css-loader", "postcss-loader"],
