@@ -1,6 +1,6 @@
 {
   "name": "component-library-tailwind-starter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "main": "dist/index",
   "src": "lib/index",
   "repository": "https://github.com/kokiebisu/component-library-tailwind-starter.git",
