@@ -4,13 +4,11 @@
   <p align="center">
      A starter template to create your own React component library using TailwindCSS
     <br />
-    <a href="https://github.com/othneildrew/Best-README-Template"><strong>Explore the docs »</strong></a>
     <br />
     <br />
+    <a href="https://github.com/kokiebisu/component-library-tailwind-starter/issues">Report Bug</a>
     ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Report Bug</a>
-    ·
-    <a href="https://github.com/othneildrew/Best-README-Template/issues">Request Feature</a>
+    <a href="https://github.com/kokiebisu/component-library-tailwind-starter/issues">Request Feature</a>
   </p>
 </p>
 
@@ -21,7 +19,7 @@
   <summary>Table of Contents</summary>
   <ol>
     <li>
-      <a href="#about-the-project">About The Project</a>
+      <a href="#motive">Motive</a>
       <ul>
         <li><a href="#built-with">Built With</a></li>
       </ul>
@@ -42,7 +40,7 @@
 <!-- ABOUT THE PROJECT -->
 ## Motive
 
-I wasn't able to find a good repository with the following to consideration:
+I wasn't able to find a suitable repository that satisfied the following:
 * Minimum configuration (for flexibility)
 * Latest versions of Tailwind, Webpack Plugins
 * Storybook integration
@@ -50,11 +48,10 @@ I wasn't able to find a good repository with the following to consideration:
 
 ### Built With
 
-This section should list any major frameworks that you built your project using. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
-* [React](https://getbootstrap.com)
-* [Webpack](https://jquery.com)
-* [Storybook](https://laravel.com)
-
+* [React](https://reactjs.org)
+* [Webpack](https://webpack.js.org)
+* [Storybook](https://storybook.js.org)
+* [Typescript](https://www.typescriptlang.org)
 
 
 <!-- GETTING STARTED -->
@@ -87,11 +84,12 @@ This is an example of how to list things you need to use the software and how to
 <!-- USAGE EXAMPLES -->
 ## Usage
 
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-1. Building
+1. Import the library into your project
    ```sh
-   yarn build 
+   yarn add component-library-tailwind-starter
    ```
-This will create a dist folder which can be used by other projects
+  
+2. Try importing the Button component
+    ```JS
+    import { Button } from 'component-library-tailwind-starter';
+    ```
