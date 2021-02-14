@@ -1,8 +1,8 @@
 {
   "name": "component-library-tailwind-starter",
   "version": "1.0.1",
-  "main": "dist/index",
-  "src": "lib/index",
+  "main": "dist/index.js",
+  "src": "lib/index.js",
   "repository": "https://github.com/kokiebisu/component-library-tailwind-starter.git",
   "author": "Kenichi Okiebisu <a01056715@gmail.com>",
   "license": "MIT",
