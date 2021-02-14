@@ -1,5 +1,4 @@
 const path = require("path");
-const { CleanWebpackPlugin } = require("clean-webpack-plugin");
 
 module.exports = {
   mode: "production",
@@ -7,25 +6,15 @@ module.exports = {
   output: {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
+    libraryTarget: "umd",
+    library: "component-library-tailwind-starter",
   },
-  plugins: [new CleanWebpackPlugin()],
   module: {
     rules: [
       {
         test: /\.tsx?/,
         exclude: /node_modules/,
-        use: {
-          loader: "babel-loader",
-          options: {
-            presets: [["@babel/preset-react"], "@babel/preset-env"],
-            // preset-react
-            // Enables the use of JSX
-
-            // preset-env
-            // Enables the use of ES2015 ~
-            plugins: ["@babel/plugin-transform-runtime"], // enable async await syntax
-          },
-        },
+        use: ["ts-loader"],
       },
       // {
       //   test: /\.tsx$/,
@@ -40,5 +29,8 @@ module.exports = {
   },
   resolve: {
     extensions: [".tsx", ".ts", ".js"],
+  },
+  externals: {
+    react: "react",
   },
 };

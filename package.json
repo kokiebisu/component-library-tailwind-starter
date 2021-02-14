@@ -14,8 +14,6 @@
     "html-webpack-plugin": "^5.1.0",
     "postcss": "^7",
     "postcss-loader": "4.2.0",
-    "react": "^17.0.1",
-    "react-dom": "^17.0.1",
     "tailwindcss": "npm:@tailwindcss/postcss7-compat"
   },
   "devDependencies": {
@@ -38,10 +36,16 @@
     "webpack-cli": "^4.5.0",
     "webpack-node-externals": "^2.5.2"
   },
+  "peerDependencies": {
+    "react": "16.x"
+  },
   "scripts": {
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
     "build": "NODE_ENV=production webpack",
     "deploy": "build-storybook && gh-pages -d storybook-static"
-  }
+  },
+  "files": [
+    "./dist"
+  ]
 }
